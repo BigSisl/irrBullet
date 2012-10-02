@@ -39,12 +39,17 @@ void GameScene::onLoad(){
   character = new Character(world, device, smgr->getMesh("obj/slender.x"));
   
   //add temp ground
-  Node = device->getSceneManager()->addCubeSceneNode(1.0);
+  Node = device->getSceneManager()->addCubeSceneNode(1.0, 0, 0);
 	Node->setScale(core::vector3df(3,3,3)); // 400, 3, 400
 	Node->setPosition(core::vector3df(0,60,0));
 	Node->setMaterialFlag(video::EMF_LIGHTING, true);
 	Node->setMaterialFlag(video::EMF_NORMALIZE_NORMALS, true);
 	Node->setMaterialTexture(0, device->getVideoDriver()->getTexture("../media/rockwall.jpg"));
+  
+  selector = smgr->createOctreeTriangleSelector(
+                                device->getSceneManager()->getMesh("obj/slender.x"), Node, 128);
+  
+  Node->setTriangleSelector(selector);
   
   //change Texture coordinates
   m.setTextureScale(0.2f,0.2f);

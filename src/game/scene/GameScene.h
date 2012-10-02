@@ -30,6 +30,7 @@ private:
   Character* character;
   
   scene::ICameraSceneNode* camera;
+  scene::ITriangleSelector* selector;
   
 };
 
