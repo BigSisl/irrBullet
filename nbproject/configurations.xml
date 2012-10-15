@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="80">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df name="obj" root="obj">
+    </df>
+    <df name="src" root="src">
+      <df name="engine">
+        <in>Angle.cpp</in>
+        <in>Angle.h</in>
+        <in>KeyBuffer.cpp</in>
+        <in>KeyBuffer.h</in>
+        <in>Scene.cpp</in>
+        <in>Scene.h</in>
+        <in>VoidReceiver.cpp</in>
+        <in>VoidReceiver.h</in>
+        <in>World.cpp</in>
+        <in>World.h</in>
+        <in>macros.h</in>
+      </df>
+      <df name="game">
+        <df name="scene">
+          <in>GameScene.cpp</in>
+          <in>GameScene.h</in>
+        </df>
+        <in>Character.cpp</in>
+        <in>Character.h</in>
+      </df>
+      <in>main.cpp</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>CMakeLists.txt</itemPath>
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>src</Elem>
+    <Elem>obj</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>bin/runover.exe</executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include</pElem>
+            </incDir>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <folder path="src/engine">
+        <ccTool>
+          <incDir>
+            <pElem></pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include</pElem>
+            <pElem>c:/cproject/RunOver/src/engine</pElem>
+            <pElem>.</pElem>
+            <pElem>c:/mingw/include</pElem>
+            <pElem>src/engine</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="src/game">
+        <ccTool>
+          <incDir>
+            <pElem></pElem>
+            <pElem>c:/mingw/include/Bullet/BulletCollision/CollisionShapes</pElem>
+            <pElem>c:/mingw/include/GL</pElem>
+            <pElem>c:/mingw/include/BulletCollision/NarrowPhaseCollision</pElem>
+            <pElem>../../MinGW/include/Bullet/BulletDynamics/ConstraintSolver</pElem>
+            <pElem>c:/mingw/include/irrlicht</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++</pElem>
+            <pElem>../../MinGW/include/Bullet/BulletDynamics/Dynamics</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/debug</pElem>
+            <pElem>../../MinGW/include/BulletCollision/NarrowPhaseCollision</pElem>
+            <pElem>src/game</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/debug</pElem>
+            <pElem>c:/mingw/include</pElem>
+            <pElem>c:/mingw/include/Bullet/BulletDynamics/ConstraintSolver</pElem>
+            <pElem>c:/mingw/include/LinearMath</pElem>
+            <pElem>src/engine</pElem>
+            <pElem>c:/cproject/RunOver/src/game</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/bits</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/mingw32/bits</pElem>
+            <pElem>../../MinGW/include/GL</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/ext</pElem>
+            <pElem>c:/cproject/RunOver/src/engine</pElem>
+            <pElem>c:/mingw/include/BulletCollision/BroadphaseCollision</pElem>
+            <pElem>.</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/mingw32/bits</pElem>
+            <pElem>c:/mingw/include/Bullet/BulletCollision/BroadphaseCollision</pElem>
+            <pElem>../../MinGW/include/Bullet/BulletCollision/CollisionShapes</pElem>
+            <pElem>../../MinGW/include/Bullet/BulletCollision/BroadphaseCollision</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/bits</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/ext</pElem>
+            <pElem>c:/mingw/include/Bullet/BulletDynamics/Dynamics</pElem>
+            <pElem>../../MinGW/include/irrlicht</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="src/game/scene">
+        <ccTool>
+          <incDir>
+            <pElem>c:/cproject/RunOver/src/game/scene</pElem>
+            <pElem>src/game/scene</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="src/engine/Angle.cpp" ex="false" tool="1" flavor="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/bits</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/mingw32/bits</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/ext</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/mingw32/bits</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/debug</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/bits</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/ext</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/debug</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/engine/Angle.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="src/engine/KeyBuffer.cpp" ex="false" tool="1" flavor="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/bits</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/mingw32/bits</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/ext</pElem>
+            <pElem>c:/mingw/include/irrlicht</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/mingw32/bits</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/debug</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/bits</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/ext</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/debug</pElem>
+            <pElem>../../MinGW/include/irrlicht</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/engine/KeyBuffer.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="src/engine/Scene.cpp" ex="false" tool="1" flavor="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++</pElem>
+            <pElem>c:/mingw/include/Bullet/BulletCollision/CollisionShapes</pElem>
+            <pElem>c:/mingw/include/GL</pElem>
+            <pElem>c:/mingw/include/BulletCollision/NarrowPhaseCollision</pElem>
+            <pElem>../../MinGW/include/Bullet/BulletDynamics/ConstraintSolver</pElem>
+            <pElem>c:/mingw/include/irrlicht</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++</pElem>
+            <pElem>../../MinGW/include/Bullet/BulletDynamics/Dynamics</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/debug</pElem>
+            <pElem>../../MinGW/include/BulletCollision/NarrowPhaseCollision</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/debug</pElem>
+            <pElem>c:/mingw/include/LinearMath</pElem>
+            <pElem>c:/mingw/include/Bullet/BulletDynamics/ConstraintSolver</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/bits</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/mingw32/bits</pElem>
+            <pElem>../../MinGW/include/GL</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/ext</pElem>
+            <pElem>c:/mingw/include/BulletCollision/BroadphaseCollision</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/mingw32/bits</pElem>
+            <pElem>c:/mingw/include/Bullet/BulletCollision/BroadphaseCollision</pElem>
+            <pElem>../../MinGW/include/Bullet/BulletCollision/CollisionShapes</pElem>
+            <pElem>../../MinGW/include/Bullet/BulletCollision/BroadphaseCollision</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/bits</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/ext</pElem>
+            <pElem>c:/mingw/include/Bullet/BulletDynamics/Dynamics</pElem>
+            <pElem>../../MinGW/include/irrlicht</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/engine/Scene.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="src/engine/VoidReceiver.cpp" ex="false" tool="1" flavor="4">
+        <ccTool>
+          <incDir>
+            <pElem>c:/mingw/include/irrlicht</pElem>
+            <pElem>../../MinGW/include/irrlicht</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/engine/VoidReceiver.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="src/engine/World.cpp" ex="false" tool="1" flavor="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++</pElem>
+            <pElem>c:/mingw/include/Bullet/BulletCollision/CollisionShapes</pElem>
+            <pElem>c:/mingw/include/GL</pElem>
+            <pElem>c:/mingw/include/BulletSoftBody</pElem>
+            <pElem>../../MinGW/include/Bullet/BulletDynamics/Vehicle</pElem>
+            <pElem>c:/mingw/include/BulletCollision/NarrowPhaseCollision</pElem>
+            <pElem>../../MinGW/include/Bullet/BulletDynamics/ConstraintSolver</pElem>
+            <pElem>c:/mingw/include/irrlicht</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++</pElem>
+            <pElem>../../MinGW/include/Bullet/BulletDynamics/Dynamics</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/debug</pElem>
+            <pElem>../../MinGW/include/BulletCollision/NarrowPhaseCollision</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/debug</pElem>
+            <pElem>c:/mingw/include/LinearMath</pElem>
+            <pElem>c:/mingw/include/Bullet/BulletDynamics/ConstraintSolver</pElem>
+            <pElem>c:/mingw/include/Bullet/LinearMath</pElem>
+            <pElem>../../MinGW/include/Bullet/LinearMath</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/bits</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/mingw32/bits</pElem>
+            <pElem>../../MinGW/include/GL</pElem>
+            <pElem>c:/mingw/include/irrbullet</pElem>
+            <pElem>c:/mingw/lib/gcc/mingw32/4.7.0/include/c++/ext</pElem>
+            <pElem>c:/mingw/include/BulletCollision/BroadphaseCollision</pElem>
+            <pElem>../../MinGW/include/irrbullet</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/mingw32/bits</pElem>
+            <pElem>c:/mingw/include/Bullet/BulletCollision/BroadphaseCollision</pElem>
+            <pElem>../../MinGW/include/Bullet/BulletCollision/CollisionShapes</pElem>
+            <pElem>../../MinGW/include/Bullet/BulletCollision/BroadphaseCollision</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/bits</pElem>
+            <pElem>c:/mingw/include/Bullet/BulletDynamics/Vehicle</pElem>
+            <pElem>../../MinGW/lib/gcc/mingw32/4.7.0/include/c++/ext</pElem>
+            <pElem>c:/mingw/include/Bullet/BulletDynamics/Dynamics</pElem>
+            <pElem>../../MinGW/include/irrlicht</pElem>
+            <pElem>../../MinGW/include/BulletSoftBody</pElem>
+            <pElem>c:/mingw/include/BulletDynamics/ConstraintSolver</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/engine/World.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="src/engine/macros.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="src/game/Character.cpp" ex="false" tool="1" flavor="4">
+        <ccTool>
+          <incDir>
+            <pElem>c:/mingw/include/BulletSoftBody</pElem>
+            <pElem>../../MinGW/include/Bullet/BulletDynamics/Vehicle</pElem>
+            <pElem>c:/mingw/include/Bullet/LinearMath</pElem>
+            <pElem>../../MinGW/include/Bullet/LinearMath</pElem>
+            <pElem>c:/mingw/include/irrbullet</pElem>
+            <pElem>../../MinGW/include/irrbullet</pElem>
+            <pElem>c:/mingw/include/Bullet/BulletDynamics/Vehicle</pElem>
+            <pElem>../../MinGW/include/BulletSoftBody</pElem>
+            <pElem>c:/mingw/include/BulletDynamics/ConstraintSolver</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/game/Character.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="src/game/scene/GameScene.cpp" ex="false" tool="1" flavor="4">
+      </item>
+      <item path="src/game/scene/GameScene.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="src/main.cpp" ex="true" tool="1" flavor="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

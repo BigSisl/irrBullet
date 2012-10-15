@@ -25,12 +25,22 @@ public:
   void move(core::vector3df pos);
   void rot(core::vector3df rot);
   
+  scene::IAnimatedMeshSceneNode* getNote();
+  
   void setRot(core::vector3df rot);
+  void setRot(core::quaternion rot);
+  void setPos(core::vector3df rot);
+  
+  void setDestination(core::vector3df pos);
   
   virtual ~Character();
 private:  
   IKinematicCharacterController* controller;
   scene::IAnimatedMeshSceneNode* Node;
+  
+  //last chracter pos
+  core::vector3df lastPos;
+  float moved; //how much character moved
   
   World* world;
   IrrlichtDevice* device;
