@@ -8,7 +8,7 @@
 #include "KeyBuffer.h"
 #include <iostream>
 #include <cstdio>
-#include <irrbullet.h>
+#include <irrbullet/irrbullet.h>
 
 using namespace std;
 
@@ -195,7 +195,7 @@ void World::setFrameDeltaTime(float frameDeltaTime){
 
 void World::loadIrrBulletWorld(IrrlichtDevice* device){
   //uses at the moment Debug Drawer
-  this->irrWorld = createIrrBulletWorld(device, true, true);
+  this->irrWorld = createIrrBulletWorld(this->device, false, false);
 }
 
 IrrlichtDevice *World::getDevice() {

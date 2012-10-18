@@ -10,8 +10,15 @@
 
 #include <irrlicht/irrlicht.h>
 #include <irrbullet/kinematiccharactercontroller.h>
+#include <ISceneNode.h>
+#include <irrbullet/physicsdebug.h>
+#include <IAnimatedMesh.h>
+#include <IAnimatedMeshSceneNode.h>
+#include <memory>
+#include <quaternion.h>
 
 #include "../engine/World.h"
+#include "../constants.h"
 
 using namespace irr;
 
@@ -25,16 +32,35 @@ public:
   void move(core::vector3df pos);
   void rot(core::vector3df rot);
   
-  void setRot(core::vector3df rot);
+  scene::IAnimatedMeshSceneNode* getNote();
   
-  virtual ~Character();
+  void setRot(core::vector3df rot);
+  void setRot(core::quaternion rot);
+  void setPos(core::vector3df rot);
+  
+  void jump();
+  
+  bool reachedDestination();
+  void recalcDestination();
+  
+  void setDestination(core::vector3df pos);
+  
+  ~Character();
 private:  
   IKinematicCharacterController* controller;
   scene::IAnimatedMeshSceneNode* Node;
   
+  //last chracter pos
+  core::vector3df lastPos;
+  core::vector3df curDestination;
+  float moved; //how much character moved
+  
   World* world;
   IrrlichtDevice* device;
 
+  float moveTime;
+  
+  characterstatetype curState;
 };
 
 #endif	/* CHARACTER_H */

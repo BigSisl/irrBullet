@@ -7,12 +7,13 @@
 #include "../../engine/Scene.h"
 #include "../../engine/VoidReceiver.h"
 
-#include <boxshape.h>
+#include <irrbullet/boxshape.h>
 #include <irrbullet/kinematiccharactercontroller.h>
 #include <ICameraSceneNode.h>
 #include <ILightSceneNode.h>
 #include <IAnimatedMeshSceneNode.h>
 
+#include "../../constants.h"
 #include "../Character.h"
 
 //set GUI ids
@@ -28,8 +29,18 @@ public:
   
 private:  
   Character* character;
+  Character* character2;
+  
+  //Save mouse positions
+  core::vector2di mousePos;
+  
+  // Tracks the current intersection point with the level or a mesh
+  core::vector3df intersection;
+  scene::IVolumeLightSceneNode * selectedPos;
   
   scene::ICameraSceneNode* camera;
+  scene::ITriangleSelector* selector;
+  scene::ISceneCollisionManager* collMan;
   
 };
 

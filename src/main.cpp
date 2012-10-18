@@ -1,11 +1,14 @@
 #include <irrlicht/irrlicht.h>
+#include <irrbullet.h>
 #include "engine/World.h"
 #include "game/scene/GameScene.h"
 #include <ctime>
+#include <IGUIEnvironment.h>
 
 using namespace irr;
 
 int main() {
+  puts("1");
   srand(time(NULL));
   World *world = new World();
   IrrlichtDevice* device = createDevice(video::EDT_OPENGL,
@@ -13,8 +16,9 @@ int main() {
   if (device == 0) {
     return 1; // could not create selected driver.
   }
-
+  
   world->setDevice(device);
+  
   world->loadIrrBulletWorld(device);
   
   world->getIrrBulletWorld()->setDebugMode(EPDM_DrawAabb |
@@ -22,7 +26,6 @@ int main() {
   
   //create scene
   GameScene* game = new GameScene(world);
-
   
   //add scenes
   world->addScene(game);
