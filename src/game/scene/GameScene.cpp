@@ -21,13 +21,11 @@ GameScene::GameScene(World *world) : Scene("game", world){
 
 void GameScene::onLoad(){
   
-  
   character = new Character(world, device, smgr->getMesh("obj/character.x"));
   character2 = new Character(world, device, smgr->getMesh("obj/character.x"));
   
   character2->setPos(core::vector3df(0.0f,40.0f,0.0f));
-  
-    irr::scene::ISceneNode *Cube = device->getSceneManager()->addCubeSceneNode(1.0f);
+  irr::scene::ISceneNode *Cube = device->getSceneManager()->addCubeSceneNode(1.0f);
 	Cube->setScale(core::vector3df(1.0f,1.0f,1.0f));
 	Cube->setPosition(core::vector3df(0.0f,40.0f, 0.0f));
 	Cube->setMaterialFlag(irr::video::EMF_LIGHTING, true);
@@ -44,6 +42,7 @@ void GameScene::onLoad(){
     // TERRAIN
 	scene::IMeshSceneNode *Node = device->getSceneManager()->addMeshSceneNode(device->getSceneManager()->getMesh("../media/terrainMain.b3d"),
                                         0, 1 | TERRAINID, core::vector3df(0.0f,0.0f,0.0f), core::vector3df(0.0f,0.0f,0.0f), core::vector3df(1.0f,1.0f,1.0f));
+  
 	Node->setPosition(core::vector3df(0,0,0));
 	Node->setMaterialFlag(video::EMF_LIGHTING, false);
     
@@ -102,6 +101,7 @@ void GameScene::onLoad(){
           for (s32 g=7; g > 0; --g)
           {
                   core::stringc tmp;
+                  
                   tmp = "obj/img/portal";
                   tmp += g;
                   tmp += ".bmp";
@@ -118,6 +118,7 @@ void GameScene::onLoad(){
           // drop the animator because it was created with a create() function
           glow->drop();
   }
+  
   ///////////////////////////////////////////////////
   
   //add lightning

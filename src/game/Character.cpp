@@ -5,7 +5,17 @@
  * Created on 2. Oktober 2012, 16:01
  */
 
+<<<<<<< HEAD
 #include <IGUIEnvironment.h>
+=======
+#include <irrbullet/kinematiccharactercontroller.h>
+#include <ISceneNode.h>
+#include <irrbullet/physicsdebug.h>
+#include <IAnimatedMesh.h>
+#include <IAnimatedMeshSceneNode.h>
+#include <memory>
+#include <quaternion.h>
+>>>>>>> 535339a4dd9326ecae6005d44873d8fa4a7fb5dc
 
 #include "Character.h"
 
@@ -28,16 +38,6 @@ Character::Character(World* world, IrrlichtDevice* device,scene::IAnimatedMesh* 
   lastPos.set(0,0,0);
   
   moveTime = 0;
-  
-  Node->setFrameLoop(40,140);
-  Node->setAnimationSpeed(120.0f);
-}
-
-scene::IAnimatedMeshSceneNode* Character::getNote(){
-  return Node;
-}
-
-void Character::updateCharacter(){
   Node->setPosition(controller->getWorldTransform().getTranslation() - core::vector3df(0.0f,3.5f,0.0f));
   
   //printf("pos: %f, %f, %f\n", lastPos.X, lastPos.Y, lastPos.Z);

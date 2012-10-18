@@ -53,6 +53,7 @@ private:
   //last chracter pos
   core::vector3df lastPos;
   core::vector3df curDestination;
+  
   float moved; //how much character moved
   
   World* world;

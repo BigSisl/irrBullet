@@ -38,6 +38,13 @@ private:
   core::vector3df intersection;
   scene::IVolumeLightSceneNode * selectedPos;
   
+  //Save mouse positions
+  core::vector2di mousePos;
+  
+  // Tracks the current intersection point with the level or a mesh
+  core::vector3df intersection;
+  scene::IVolumeLightSceneNode * selectedPos;
+  
   scene::ICameraSceneNode* camera;
   scene::ITriangleSelector* selector;
   scene::ISceneCollisionManager* collMan;
